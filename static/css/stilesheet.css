@@ -44,7 +44,7 @@
 
 .dsm1{
     margin: 2% 5% 0 5%;
-    font-size: 34px;
+    font-size: 24px;
     padding: 1em;
     border-radius: 12px;
     background-color: white;
@@ -160,17 +160,24 @@
 }
 
 .ll{
-    padding: 1em;
+    padding: 8px 1em 8px 1em;
 }
 
 .ll1{
-    padding: 8px 1em 8px 1em;;
+    padding: 8px 1em 8px 1em;
 
 }
 
 .headtext{
     padding-left: 8px;
     font-weight: bolder;
+    font-size: 30px;
+}
+
+@media (max-width: 1000px){
+    .headtext {
+        font-size: 40px;
+    }
 }
 
 .headtext1{
@@ -185,8 +192,8 @@
 }
 
 .gigadiv{
-    background-color: whitesmoke;
-    font-family: "Times New Roman";
+    background-color: #f5ffed;
+    font-family: Segoe UI,Roboto,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;;
 }
 
 li::marker {
@@ -246,7 +253,8 @@ input[type=submit]{
 }
 
 input[type=checkbox]{
-    margin-left: 1em;
+    margin-left: 10px;
+    margin-right: 1em;
     transform: scale(2);
 }
 
