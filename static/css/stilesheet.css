@@ -1,0 +1,264 @@
+.main{
+    background-image:linear-gradient(to left, transparent, black),
+            url("/static/images/header_image.jpg");
+
+    background-size: cover;
+    overflow:auto;
+    width:100%;
+    height: 100%;
+    background-position: 0 30%;
+    margin: -8px;
+}
+
+.dd{
+    overflow:auto;
+}
+
+.texttop{
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 36px;
+    margin-left: 3%;
+    margin-top: 5%;
+    margin-right: 3%;
+}
+
+.btn{
+    margin: 3% 0 5% 3%;
+    background-color: #82ac29;
+    font-size: 24px;
+    border: none;
+    padding: 15px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.dsm{
+    margin: 2% 5% 0 5%;
+    font-size: 24px;
+    padding: 1em;
+    border-radius: 12px;
+    background: white;
+    position: center;
+}
+
+.dsm1{
+    margin: 2% 5% 0 5%;
+    font-size: 34px;
+    padding: 1em;
+    border-radius: 12px;
+    background-color: white;
+    background-image: url("/static/images/vac.png");
+    background-size: 370px;
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+    background-position-y: 50%;
+}
+
+@media (max-width: 1240px) {
+    .dsm1 {
+       background-image: none;
+    }
+}
+
+.dsm2{
+    margin: 2% 5% 0 5%;
+    font-size: 24px;
+    padding: 1em 1em 1em 50%;
+    border-radius: 12px;
+    background-color: white;
+    background-image: url("/static/images/kaef.png");
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position-x: 15%;
+    background-position-y: 50%;
+}
+
+@media (max-width: 1000px) {
+    .dsm2 {
+        padding: 1em;
+        background-image: none;
+    }
+}
+
+.dsm3{
+    margin: 2% 5% 0 5%;
+    font-size: 24px;
+    padding: 1em;
+    border-radius: 12px;
+    background-color: white;
+    background-image: url("/static/images/rost.png");
+    background-size: 330px;
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+    background-position-y: 50%;
+}
+
+@media (max-width: 1070px) {
+    .dsm3 {
+       background-image: none;
+    }
+}
+
+.dsm4 {
+    margin: 2% 5% 0 5%;
+    font-size: 24px;
+    padding: 1em 1em 1em 50%;
+    border-radius: 12px;
+    background-color: white;
+    background-image: url("/static/images/lichnost.png");
+    background-size: 350px;
+    background-repeat: no-repeat;
+    background-position-x: 15%;
+    background-position-y: 50%;
+}
+
+@media (max-width: 1000px) {
+    .dsm4 {
+        padding: 1em;
+        background-image: none;
+    }
+}
+
+.dsm5{
+    margin: 2% 5% 0 5%;
+    font-size: 24px;
+    padding: 1em;
+    border-radius: 12px;
+    background-color: white;
+    background-image: url("/static/images/garant.png");
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position-x: 85%;
+    background-position-y: 50%;
+}
+
+@media (max-width: 1100px) {
+    .dsm5 {
+       background-image: none;
+    }
+}
+
+.dsm6 {
+    margin: 2% 5% 0 5%;
+    font-size: 24px;
+    padding: 1em 1em 1em 50%;
+    border-radius: 12px;
+    background-color: white;
+    background-image: url("/static/images/time.png");
+    background-size: 450px;
+    background-repeat: no-repeat;
+    background-position-x: 15%;
+    background-position-y: 50%;
+}
+
+@media (max-width: 1000px) {
+    .dsm6 {
+        padding: 1em;
+        background-image: none;
+    }
+}
+
+.ll{
+    padding: 1em;
+}
+
+.ll1{
+    padding: 8px 1em 8px 1em;;
+
+}
+
+.headtext{
+    padding-left: 8px;
+    font-weight: bolder;
+}
+
+.headtext1{
+    text-align: center;
+    font-weight: bolder;
+}
+
+@media (max-width: 1000px){
+    .headtext1 {
+        text-align: left;
+    }
+}
+
+.gigadiv{
+    background-color: whitesmoke;
+    font-family: "Times New Roman";
+}
+
+li::marker {
+  color: #82ac29;
+  font-size: 2rem;
+}
+
+tr{
+    padding-left: 8px;
+    font-size: 24px;
+}
+
+.tire{
+    font-weight: bolder;
+    color: #fbe000;
+}
+
+
+.divlist{
+    flex: 0 1 40%;
+}
+
+input{
+    padding: 1em;
+    margin: 1%;
+    font-size: 24px;
+    box-sizing: border-box;
+    border-color: #82ac29;
+    border-radius: 14px;
+}
+
+input[type=text]{
+    width: 45%;
+}
+
+input[type=email]{
+    width: 93.5%;
+}
+
+input[type=tel]{
+    width: 45%;
+}
+
+input[type=submit]{
+    background-color: #82ac29;
+    font-size: 24px;
+    border: none;
+    padding: 15px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+@media (max-width: 1000px) {
+    input[type=submit] {
+        font-size: 34px;
+    }
+}
+
+input[type=checkbox]{
+    margin-left: 1em;
+    transform: scale(2);
+}
+
+.divform{
+    margin: auto;
+    width: 50%;
+}
+
+@media (max-width: 1000px){
+    .divform{
+        margin: 0;
+        width: auto;
+        flex-wrap: wrap;
+    }
+}
