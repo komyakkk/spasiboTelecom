@@ -28,7 +28,7 @@ def contact(request):
                 'Телефон': form.cleaned_data['telephone'],
             }
             try:
-                send_mail(subject, DEFAULT_FROM_EMAIL, ['sdubaenko@ugtu.net'])
+                send_mail(subject, DEFAULT_FROM_EMAIL, ['stanislavcheggg@gmail.com'])
             except BadHeaderError:
                 return HttpResponse('Найден некорректный заголовок')
             return redirect("main:mainPage")
