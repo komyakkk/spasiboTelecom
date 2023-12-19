@@ -86,15 +86,16 @@
 
 <div class="dsm" id="part1">
    <div class="divform">
-    <p class="headtext">Расскажите немного о себе, и мы обязательно с вами свяжемся (все поля обязательны для заполнения):</p>
-    <p><input type="text" placeholder="Фамилия" > <input type="text" placeholder="Имя"></p>
-    <p><input type="text" placeholder="Отчество"> <input type="tel" placeholder="Телефон"></p>
-    <input type="email" placeholder="Электронная почта">
-    <p><label for="politics"></label><input type="checkbox" id="politics" onclick="check();" value="" autocomplete="off"/>
+       <form method="post">
+           {% csrf_token %}
+            <p class="headtext">Расскажите немного о себе, и мы обязательно с вами свяжемся (все поля обязательны для заполнения):</p>
+            <p><input type="text" placeholder="Фамилия" name="first_name" id="id_first_name"> <input type="text" placeholder="Имя" id="id_second_name" name="second_name"></p>
+            <p><input type="text" placeholder="Отчество" name="last_name" id="id_last_name"> <input type="tel" placeholder="Телефон" id="id_telephone" name="telephone"></p>
+            <input type="email" placeholder="Электронная почта" name="email_address" id="id_email_address">
+            <p><label for="politics"></label><input type="checkbox" id="politics" onclick="check();" value="" autocomplete="off"/>
             <a class="headtext1">Даю согласие на обработку персональных данных.</a></p>
-    <input type="submit" name="submit" class="submit" disabled="" value="Отправить" />
-    </div>
-    <script>
+            <input type="submit" name="submit" class="submit" disabled="" value="Отправить" />
+        <script>
         function check() {
             var submit = document.getElementsByName('submit')[0];
                 if (document.getElementById('politics').checked)
@@ -102,7 +103,9 @@
                 else
                     submit.disabled = 'disabled';
                 }
-    </script>
+        </script>
+        </form>
+   </div>
 </div>
 </div>
 </body>

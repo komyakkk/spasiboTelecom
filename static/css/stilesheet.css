@@ -49,15 +49,17 @@
     border-radius: 12px;
     background-color: white;
     background-image: url("/static/images/vac.png");
-    background-size: 370px;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position-x: 80%;
+    background-position-x: 90%;
     background-position-y: 50%;
 }
 
 @media (max-width: 1400px) {
     .dsm1 {
-       background-position-x: 90%;
+        background-position-x: 90%;
+        background-size: 300px;
+        background-position-y: 100%;
     }
 }
 
@@ -189,6 +191,7 @@
 .headtext1{
     text-align: center;
     font-weight: bolder;
+    padding-left: 16px;
 }
 
 @media (max-width: 1000px){
@@ -276,3 +279,4 @@ input[type=checkbox]{
         flex-wrap: wrap;
     }
 }
+

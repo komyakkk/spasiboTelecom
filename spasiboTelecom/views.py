@@ -11,10 +11,6 @@ from django.http import HttpResponse
 from .settings import DEFAULT_FROM_EMAIL
 
 
-def mainPage(request):
-    return render(request, 'home.html')
-
-
 def contact(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
@@ -27,10 +23,13 @@ def contact(request):
                 'Почта': form.cleaned_data['email_address'],
                 'Телефон': form.cleaned_data['telephone'],
             }
+            message = str(body)
             try:
-                send_mail(subject, DEFAULT_FROM_EMAIL, ['stanislavcheggg@gmail.com'])
+                send_mail(subject, message, None, ['spasibo.telecom@mail.ru'])
             except BadHeaderError:
                 return HttpResponse('Найден некорректный заголовок')
-            return redirect("main:mainPage")
+            return redirect('mainPage')
     form = ContactForm()
-    return render(request, "contact.html", {'form': form})
+    return render(request, "home.html", {'form': form})
+
+

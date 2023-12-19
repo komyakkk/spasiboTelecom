@@ -21,7 +21,6 @@ from spasiboTelecom.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', mainPage, name='mainPage'),
-    path("contact", views.contact, name="contact"),
+    path('', contact, name='mainPage'),
 ]
 
