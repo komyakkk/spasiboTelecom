@@ -132,7 +132,10 @@ MEDIA_URL = '/media/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-# EMAIL_FILE_PATH = 'tmp/email-messages/'
-#
-# EMAIL_HOST, EMAIL_PORT, EMAIL_HOST_USER, EMAIL_HOST_PASSWORD = 'localhost', 1025, None, None
+EMAIL_HOST = 'mail.spasibo-telecom.ru'
+EMAIL_HOST_USER = 'vacansii@spasibo-telecom.ru'
+EMAIL_HOST_PASSWORD = 'sF3sD2pX6cyX2cG0'
+EMAIL_PORT = '993'
+EMAIL_USE_TLS = True
+
+DEFAULT_FROM_EMAIL = 'vacansii@spasibo-telecom.ru'
