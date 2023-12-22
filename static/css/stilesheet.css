@@ -33,15 +33,6 @@
     border-radius: 12px;
 }
 
-.dsm{
-    margin: 2% 5% 0 5%;
-    font-size: 24px;
-    padding: 1em;
-    border-radius: 12px;
-    background: white;
-    position: center;
-}
-
 .dsm1{
     margin: 2% 5% 0 5%;
     font-size: 24px;
@@ -194,6 +185,15 @@
     padding-left: 16px;
 }
 
+.headtext2{
+    font-weight: bolder;
+    padding-left: 16px;
+    text-align: left;
+    margin-left: 8px;
+    margin-top: 8px
+}
+
+
 @media (max-width: 1000px){
     .headtext1 {
         text-align: left;
@@ -205,6 +205,42 @@
     font-family: Segoe UI,Roboto,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;;
 }
 
+.gigadiv1{
+    min-height: 100%;
+    min-width: 100%;
+    background-color: #f5ffed;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: Segoe UI,Roboto,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;;
+}
+
+.dsm{
+    /*overflow: auto;*/
+    /*max-width: 100%;*/
+    font-size: 24px;
+    border-radius: 12px;
+    background: white;
+    margin: auto;
+    margin-top: 5%;
+    width: 50%;
+    padding: 100px;
+
+}
+
+.btn1{
+    margin: 3% 0 5% 3%;
+    background-color: #82ac29;
+    font-size: 24px;
+    border: none;
+    padding: 15px;
+    text-align: center;
+    position: center;
+    display: inline-block;
+    border-radius: 12px;
+
+}
+
 li::marker {
   color: #82ac29;
   font-size: 2rem;
@@ -214,12 +250,6 @@ tr{
     padding-left: 8px;
     font-size: 24px;
 }
-
-.tire{
-    font-weight: bolder;
-    color: #fbe000;
-}
-
 
 .divlist{
     flex: 0 1 40%;
@@ -264,7 +294,7 @@ input[type=submit]{
 input[type=checkbox]{
     margin-left: 10px;
     margin-right: 1em;
-    transform: scale(2);
+    transform: scale(1.5);
 }
 
 .divform{
@@ -279,4 +309,5 @@ input[type=checkbox]{
         flex-wrap: wrap;
     }
 }
+
 

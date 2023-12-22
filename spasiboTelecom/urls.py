@@ -22,5 +22,6 @@ from spasiboTelecom.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', contact, name='mainPage'),
+    path('success_view', success_view, name='success')
 ]
 

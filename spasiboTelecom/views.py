@@ -24,12 +24,17 @@ def contact(request):
                 'Телефон': form.cleaned_data['telephone'],
             }
             message = str(body)
+            message = message.replace("'", "").replace('{', '').replace('}', '').replace(', ', '\n')
             try:
-                send_mail(subject, message, None, ['spasibo.telecom@mail.ru'])
+                send_mail(subject, message, None, ['spasibo.telekom@mail.ru'])
             except BadHeaderError:
                 return HttpResponse('Найден некорректный заголовок')
-            return redirect('mainPage')
+            return redirect('success')
     form = ContactForm()
     return render(request, "home.html", {'form': form})
+
+
+def success_view(request):
+    return render(request, 'success_view.html')
 
 
